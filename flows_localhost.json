@@ -1,1 +1,1600 @@
-[{"id":"69b6c0ce.2832d","type":"tab","label":"Flow 1","disabled":false,"info":""},{"id":"992ee00.be55a2","type":"tab","label":"Lucecita ","disabled":false,"info":""},{"id":"112a486b.6884e8","type":"tab","label":"Telegram","disabled":false,"info":""},{"id":"4d6bff31.31a37","type":"tab","label":"Flow 3","disabled":false,"info":""},{"id":"d98bfc21.d7af6","type":"tab","label":"Flow 4","disabled":false,"info":""},{"id":"8966470b.7d9a68","type":"tab","label":"MQTT","disabled":false,"info":""},{"id":"ad8d8520.3c2fc8","type":"ui_tab","name":"Paneldedatos1","icon":"dashboard","disabled":false,"hidden":false},{"id":"ed6f07e9.8e65e8","type":"ui_base","theme":{"name":"theme-light","lightTheme":{"default":"#0094CE","baseColor":"#0094CE","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","edited":true,"reset":false},"darkTheme":{"default":"#097479","baseColor":"#097479","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","edited":false},"customTheme":{"name":"Untitled Theme 1","default":"#4B7930","baseColor":"#4B7930","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"},"themeState":{"base-color":{"default":"#0094CE","value":"#0094CE","edited":false},"page-titlebar-backgroundColor":{"value":"#0094CE","edited":false},"page-backgroundColor":{"value":"#fafafa","edited":false},"page-sidebar-backgroundColor":{"value":"#ffffff","edited":false},"group-textColor":{"value":"#1bbfff","edited":false},"group-borderColor":{"value":"#ffffff","edited":false},"group-backgroundColor":{"value":"#ffffff","edited":false},"widget-textColor":{"value":"#111111","edited":false},"widget-backgroundColor":{"value":"#0094ce","edited":false},"widget-borderColor":{"value":"#ffffff","edited":false},"base-font":{"value":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"}},"angularTheme":{"primary":"indigo","accents":"blue","warn":"red","background":"grey"}},"site":{"name":"Node-RED Dashboard","hideToolbar":"false","allowSwipe":"false","lockMenu":"false","allowTempTheme":"true","dateFormat":"DD/MM/YYYY","sizes":{"sx":48,"sy":48,"gx":6,"gy":6,"cx":6,"cy":6,"px":0,"py":0}}},{"id":"aa829c2a.27201","type":"ui_group","name":"Color","tab":"ad8d8520.3c2fc8","order":1,"disp":true,"width":"6","collapse":false},{"id":"3ec09052.83396","type":"nora-config","name":"nora config","group":"","notify":false},{"id":"f4449555.191ff8","type":"telegrambot-config","botname":"MybootPaballo","usernames":"","chatIds":"","pollInterval":"300"},{"id":"c42446bf.889e98","type":"telegrambot-config","botname":"LaInterBot","usernames":"","chatIds":"","pollInterval":"300"},{"id":"c89debd1.711d18","type":"whatsapp-client","session":"session","headless":true,"devtools":false},{"id":"f3aebebb.221c18","type":"ui_tab","name":"Whatsapp","icon":"dashboard","disabled":false,"hidden":false},{"id":"a993ce2c.4e67","type":"telegrambot-config","botname":"","usernames":"","chatIds":"","pollInterval":"300"},{"id":"778788fb.669f08","type":"twilio-api","name":"","sid":"AC4cbccab20206dfc955c38beaf2d372c8","from":"+17813814768"},{"id":"8788f922.c06e78","type":"mqtt-broker","name":"BrokerInter","broker":"broker.hivemq.com","port":"1883","clientid":"","usetls":false,"compatmode":false,"keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","closeTopic":"","closeQos":"0","closePayload":"","willTopic":"","willQos":"0","willPayload":""},{"id":"ba750661.7763b8","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":130,"y":80,"wires":[["dc6b1459.56e1a8"]]},{"id":"dc6b1459.56e1a8","type":"debug","z":"69b6c0ce.2832d","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":390,"y":80,"wires":[]},{"id":"75395f4d.7e22d","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"Hola mundo!","payloadType":"str","x":140,"y":200,"wires":[["dc6b1459.56e1a8"]]},{"id":"fb8c7daf.eb392","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":130,"y":300,"wires":[["98923441.1d4238"]]},{"id":"4344ffa3.bdcd1","type":"debug","z":"69b6c0ce.2832d","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":510,"y":340,"wires":[]},{"id":"98923441.1d4238","type":"exec","z":"69b6c0ce.2832d","command":"ifconfig","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":310,"y":340,"wires":[["4344ffa3.bdcd1"],["4344ffa3.bdcd1"],["4344ffa3.bdcd1"]]},{"id":"e492efe5.df052","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":150,"y":440,"wires":[["7d42e1c7.a454b"]]},{"id":"7a408a9c.a3e974","type":"debug","z":"69b6c0ce.2832d","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":590,"y":460,"wires":[]},{"id":"7d42e1c7.a454b","type":"exec","z":"69b6c0ce.2832d","command":"termux-battery-status","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":340,"y":460,"wires":[["7a408a9c.a3e974"],["7a408a9c.a3e974"],["7a408a9c.a3e974"]]},{"id":"2bd682cc.75217e","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":150,"y":640,"wires":[["8ad5d29e.85044"]]},{"id":"774e39dc.91d808","type":"debug","z":"69b6c0ce.2832d","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":630,"y":640,"wires":[]},{"id":"8ad5d29e.85044","type":"exec","z":"69b6c0ce.2832d","command":" termux-camera-info","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":400,"y":660,"wires":[["774e39dc.91d808"],["774e39dc.91d808"],["774e39dc.91d808"]]},{"id":"a01e6c75.34a26","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":130,"y":760,"wires":[["cb77c34f.d1fb9"]]},{"id":"cca720fc.53e0e","type":"debug","z":"69b6c0ce.2832d","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":650,"y":760,"wires":[]},{"id":"cb77c34f.d1fb9","type":"exec","z":"69b6c0ce.2832d","command":"termux-call-log","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":410,"y":780,"wires":[["cca720fc.53e0e"],["cca720fc.53e0e"],["cca720fc.53e0e"]]},{"id":"cfe84607.8efa18","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":150,"y":920,"wires":[["4abec896.8ce108"]]},{"id":"cfbd4167.85d41","type":"debug","z":"69b6c0ce.2832d","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":690,"y":880,"wires":[]},{"id":"4abec896.8ce108","type":"exec","z":"69b6c0ce.2832d","command":"termux-camera-photo","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":450,"y":920,"wires":[["cfbd4167.85d41"],["cfbd4167.85d41"],["cfbd4167.85d41"]]},{"id":"9d70864e.a8e868","type":"ui_button","z":"69b6c0ce.2832d","name":"","group":"aa829c2a.27201","order":1,"width":0,"height":0,"passthru":false,"label":"Hola","tooltip":"","color":"","bgcolor":"{{msg.background}}","icon":"","payload":"Hola","payloadType":"str","topic":"topic","topicType":"msg","x":410,"y":1080,"wires":[["4a7ea048.9839f"]]},{"id":"3002528f.f8e13e","type":"ui_button","z":"69b6c0ce.2832d","name":"","group":"aa829c2a.27201","order":3,"width":0,"height":0,"passthru":false,"label":"Adios","tooltip":"","color":"white","bgcolor":"black","icon":"","payload":"Adios","payloadType":"str","topic":"topic","topicType":"msg","x":410,"y":1140,"wires":[["4a7ea048.9839f"]]},{"id":"4a7ea048.9839f","type":"ui_text","z":"69b6c0ce.2832d","group":"aa829c2a.27201","order":2,"width":0,"height":0,"name":"","label":"salidadetexto","format":"{{msg.payload}}","layout":"row-spread","x":610,"y":1100,"wires":[]},{"id":"94e9062d.6c1978","type":"ui_colour_picker","z":"69b6c0ce.2832d","name":"","label":"Selectordecolor","group":"aa829c2a.27201","format":"rgb","outformat":"string","showSwatch":true,"showPicker":false,"showValue":false,"showHue":false,"showAlpha":false,"showLightness":true,"square":"false","dynOutput":"false","order":4,"width":0,"height":0,"passthru":true,"topic":"topic","topicType":"msg","x":80,"y":1020,"wires":[["60eb6de5.c899d4"]]},{"id":"60eb6de5.c899d4","type":"change","z":"69b6c0ce.2832d","name":"","rules":[{"t":"set","p":"background ","pt":"msg","to":"payload","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":200,"y":1080,"wires":[["9d70864e.a8e868"]]},{"id":"d800da4d.cb8f68","type":"nora-switch","z":"992ee00.be55a2","devicename":"lucecita ","roomhint":"","name":"","passthru":false,"nora":"3ec09052.83396","topic":"","onvalue":"true","onvalueType":"bool","offvalue":"false","offvalueType":"bool","x":110,"y":120,"wires":[["37ea127e.4178ee","c75b0713.29a8d8"]]},{"id":"37ea127e.4178ee","type":"debug","z":"992ee00.be55a2","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":350,"y":120,"wires":[]},{"id":"c75b0713.29a8d8","type":"switch","z":"992ee00.be55a2","name":"","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"","vt":"str"}],"checkall":"true","repair":false,"outputs":1,"x":220,"y":220,"wires":[["c5b5ae8c.bed61","55b67973.1bbae8"]]},{"id":"c5b5ae8c.bed61","type":"exec","z":"992ee00.be55a2","command":"termux-torch on","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":380,"y":180,"wires":[[],[],[]]},{"id":"55b67973.1bbae8","type":"exec","z":"992ee00.be55a2","command":"termux-torch off","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":380,"y":260,"wires":[[],[],[]]},{"id":"f5c9a1f6.2a177","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":120,"y":1200,"wires":[["d19d20ab.ca07d"]]},{"id":"b34d94ce.758e58","type":"debug","z":"69b6c0ce.2832d","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":520,"y":1200,"wires":[]},{"id":"d19d20ab.ca07d","type":"exec","z":"69b6c0ce.2832d","command":"termux-torch on","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":300,"y":1200,"wires":[["b34d94ce.758e58"],["b34d94ce.758e58"],["b34d94ce.758e58"]]},{"id":"329c2b7d.026934","type":"inject","z":"69b6c0ce.2832d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":130,"y":1300,"wires":[["4a8effb6.36206"]]},{"id":"cc0e307e.29e86","type":"debug","z":"69b6c0ce.2832d","name":"","active":true,"tosidebar":true,"console":true,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":570,"y":1300,"wires":[]},{"id":"4a8effb6.36206","type":"exec","z":"69b6c0ce.2832d","command":"termux-torch off","addpay":false,"append":"","useSpawn":"false","timer":"","oldrc":false,"name":"","x":320,"y":1300,"wires":[["cc0e307e.29e86"],["cc0e307e.29e86"],["cc0e307e.29e86"]]},{"id":"80a114d6.9c65d8","type":"telegrambot-command","z":"112a486b.6884e8","name":"","bot":"f4449555.191ff8","command":".*","commandType":"re","commandCase":false,"x":90,"y":300,"wires":[["15dedf9b.708bf","c2ddf051.6c70c","fa25ac42.12091","d960c84c.31c898"]]},{"id":"15dedf9b.708bf","type":"debug","z":"112a486b.6884e8","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":310,"y":480,"wires":[]},{"id":"c2ddf051.6c70c","type":"debug","z":"112a486b.6884e8","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"telegram.from.first_name","targetType":"msg","statusVal":"","statusType":"auto","x":310,"y":160,"wires":[]},{"id":"fa25ac42.12091","type":"function","z":"112a486b.6884e8","name":"","func":"msg.payload = \"Hello \" + msg.telegram.from.first_name;\n\n\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":400,"y":340,"wires":[["678fe0ce.34652","2f5a3896.2d7558"]]},{"id":"251ac72b.6e6c58","type":"debug","z":"112a486b.6884e8","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":1110,"y":280,"wires":[]},{"id":"678fe0ce.34652","type":"telegrambot-notify","z":"112a486b.6884e8","name":"","bot":"f4449555.191ff8","chatId":"","message":"","parseMode":"","x":660,"y":220,"wires":[]},{"id":"c9ffdc72.d0cce","type":"telegrambot-payload","z":"112a486b.6884e8","name":"Animals","bot":"f4449555.191ff8","chatId":"","sendMethod":"sendPhoto","payload":"{\n    \"photo\": \"http://placeimg.com/640/480/animals\",\n    \"caption\": \"Animals\"\n}","x":900,"y":240,"wires":[["251ac72b.6e6c58"]]},{"id":"2f5a3896.2d7558","type":"telegrambot-switch","z":"112a486b.6884e8","name":"","bot":"f4449555.191ff8","chatId":"","question":"What a piture you want?","answers":["Animals ","Nature","Grayscale"],"outputs":3,"autoAnswerCallback":true,"timeoutValue":"","timeoutUnits":"","x":720,"y":300,"wires":[["c9ffdc72.d0cce"],["ee657361.20ac7"],["992860ec.a40d7"]]},{"id":"ee657361.20ac7","type":"telegrambot-payload","z":"112a486b.6884e8","name":"Nature","bot":"f4449555.191ff8","chatId":"","sendMethod":"sendPhoto","payload":"{\n    \"photo\": \"http://placeimg.com/640/480/nature\",\n    \"caption\": \"Nature\"\n}","x":890,"y":300,"wires":[["251ac72b.6e6c58"]]},{"id":"992860ec.a40d7","type":"telegrambot-payload","z":"112a486b.6884e8","name":"Grayscale","bot":"f4449555.191ff8","chatId":"","sendMethod":"sendPhoto","payload":"{\n    \"photo\": \"http://placeimg.com/640/480/nature/grayscale\",\n    \"caption\": \"Grayscale\"\n}","x":900,"y":360,"wires":[["251ac72b.6e6c58"]]},{"id":"b8a73428.af81a8","type":"debug","z":"112a486b.6884e8","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":630,"y":160,"wires":[]},{"id":"d960c84c.31c898","type":"google-translate","z":"112a486b.6884e8","name":"","to":"en","x":400,"y":240,"wires":[["678fe0ce.34652","b8a73428.af81a8","2cfe2532.0dc24a"]]},{"id":"2cfe2532.0dc24a","type":"ui_audio","z":"112a486b.6884e8","name":"","group":"aa829c2a.27201","voice":"Microsoft Zira Desktop - English (United States)","always":"","x":560,"y":120,"wires":[]},{"id":"91a47bbc.faca68","type":"inject","z":"4d6bff31.31a37","name":"","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"Hola, como esta?","payloadType":"str","x":120,"y":100,"wires":[["9bd9d12b.454da"]]},{"id":"9bd9d12b.454da","type":"twilio out","z":"4d6bff31.31a37","twilio":"778788fb.669f08","twilioType":"sms","url":"","number":"+525591090233","name":"","x":370,"y":80,"wires":[]},{"id":"18a312d9.aedf2d","type":"mqtt in","z":"d98bfc21.d7af6","name":"","topic":"/interamericana/apps/carlos","qos":"2","datatype":"auto","broker":"8788f922.c06e78","x":140,"y":80,"wires":[["f85d4e01.da0aa"]]},{"id":"e0171346.ee486","type":"mqtt out","z":"d98bfc21.d7af6","name":"","topic":"/interamericana/apps/carlos","qos":"","retain":"","broker":"8788f922.c06e78","x":380,"y":160,"wires":[]},{"id":"f85d4e01.da0aa","type":"debug","z":"d98bfc21.d7af6","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":420,"y":80,"wires":[]},{"id":"f35673d6.44eea","type":"inject","z":"d98bfc21.d7af6","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":140,"y":160,"wires":[["e0171346.ee486"]]},{"id":"c170bab2.6809c8","type":"inject","z":"d98bfc21.d7af6","name":"hola","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":120,"y":240,"wires":[["662bd72a.f39158"]]},{"id":"5a5d622a.6909dc","type":"inject","z":"d98bfc21.d7af6","name":"como esta ","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":130,"y":320,"wires":[["662bd72a.f39158"]]},{"id":"662bd72a.f39158","type":"mqtt out","z":"d98bfc21.d7af6","name":"","topic":"david","qos":"","retain":"","broker":"8788f922.c06e78","x":280,"y":280,"wires":[]},{"id":"295f1666.8c614a","type":"mqtt in","z":"d98bfc21.d7af6","name":"","topic":"david","qos":"2","datatype":"auto","broker":"8788f922.c06e78","x":90,"y":400,"wires":[["a096e9ce.77c538"]]},{"id":"a096e9ce.77c538","type":"debug","z":"d98bfc21.d7af6","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":230,"y":400,"wires":[]},{"id":"36cdb22b.d48e4e","type":"mqtt in","z":"8966470b.7d9a68","name":"","topic":"interamericana","qos":"2","datatype":"auto","broker":"8788f922.c06e78","x":140,"y":100,"wires":[["ff251f6d.926ea","813698df.7dd938"]]},{"id":"f8eb2ff.31616d","type":"mqtt out","z":"8966470b.7d9a68","name":"","topic":"interamericana","qos":"","retain":"","broker":"8788f922.c06e78","x":350,"y":220,"wires":[]},{"id":"ff251f6d.926ea","type":"debug","z":"8966470b.7d9a68","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":350,"y":100,"wires":[]},{"id":"f1bd8ebf.61ba7","type":"inject","z":"8966470b.7d9a68","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"Hola,¿cómo está?","payloadType":"str","x":150,"y":220,"wires":[["f8eb2ff.31616d"]]},{"id":"96bc3a5a.ff07e8","type":"ui_text_input","z":"8966470b.7d9a68","name":"","label":"","tooltip":"","group":"aa829c2a.27201","order":5,"width":0,"height":0,"passthru":true,"mode":"text","delay":"0","topic":"topic","topicType":"msg","x":160,"y":320,"wires":[["f8eb2ff.31616d"]]},{"id":"813698df.7dd938","type":"ui_text","z":"8966470b.7d9a68","group":"aa829c2a.27201","order":6,"width":0,"height":0,"name":"","label":"Salida","format":"{{msg.payload}}","layout":"col-center","x":340,"y":40,"wires":[]}]
+[
+    {
+        "id": "69b6c0ce.2832d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "992ee00.be55a2",
+        "type": "tab",
+        "label": "Lucecita ",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "112a486b.6884e8",
+        "type": "tab",
+        "label": "Telegram",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4d6bff31.31a37",
+        "type": "tab",
+        "label": "mensaje twilio",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d98bfc21.d7af6",
+        "type": "tab",
+        "label": "chat",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8966470b.7d9a68",
+        "type": "tab",
+        "label": "MQTT",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ad8d8520.3c2fc8",
+        "type": "ui_tab",
+        "name": "Paneldedatos1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ed6f07e9.8e65e8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "aa829c2a.27201",
+        "type": "ui_group",
+        "name": "Color",
+        "tab": "ad8d8520.3c2fc8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3ec09052.83396",
+        "type": "nora-config",
+        "name": "nora config",
+        "group": "",
+        "notify": false
+    },
+    {
+        "id": "f4449555.191ff8",
+        "type": "telegrambot-config",
+        "botname": "MybootPaballo",
+        "usernames": "",
+        "chatIds": "",
+        "pollInterval": "300"
+    },
+    {
+        "id": "c42446bf.889e98",
+        "type": "telegrambot-config",
+        "botname": "LaInterBot",
+        "usernames": "",
+        "chatIds": "",
+        "pollInterval": "300"
+    },
+    {
+        "id": "c89debd1.711d18",
+        "type": "whatsapp-client",
+        "session": "session",
+        "headless": true,
+        "devtools": false
+    },
+    {
+        "id": "f3aebebb.221c18",
+        "type": "ui_tab",
+        "name": "Whatsapp",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a993ce2c.4e67",
+        "type": "telegrambot-config",
+        "botname": "",
+        "usernames": "",
+        "chatIds": "",
+        "pollInterval": "300"
+    },
+    {
+        "id": "778788fb.669f08",
+        "type": "twilio-api",
+        "name": "",
+        "sid": "AC4cbccab20206dfc955c38beaf2d372c8",
+        "from": "+17813814768"
+    },
+    {
+        "id": "8788f922.c06e78",
+        "type": "mqtt-broker",
+        "name": "BrokerInter",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ba750661.7763b8",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "dc6b1459.56e1a8"
+            ]
+        ]
+    },
+    {
+        "id": "dc6b1459.56e1a8",
+        "type": "debug",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "75395f4d.7e22d",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hola mundo!",
+        "payloadType": "str",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "dc6b1459.56e1a8"
+            ]
+        ]
+    },
+    {
+        "id": "fb8c7daf.eb392",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "98923441.1d4238"
+            ]
+        ]
+    },
+    {
+        "id": "4344ffa3.bdcd1",
+        "type": "debug",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "98923441.1d4238",
+        "type": "exec",
+        "z": "69b6c0ce.2832d",
+        "command": "ifconfig",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "4344ffa3.bdcd1"
+            ],
+            [
+                "4344ffa3.bdcd1"
+            ],
+            [
+                "4344ffa3.bdcd1"
+            ]
+        ]
+    },
+    {
+        "id": "e492efe5.df052",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "7d42e1c7.a454b"
+            ]
+        ]
+    },
+    {
+        "id": "7a408a9c.a3e974",
+        "type": "debug",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7d42e1c7.a454b",
+        "type": "exec",
+        "z": "69b6c0ce.2832d",
+        "command": "termux-battery-status",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "7a408a9c.a3e974"
+            ],
+            [
+                "7a408a9c.a3e974"
+            ],
+            [
+                "7a408a9c.a3e974"
+            ]
+        ]
+    },
+    {
+        "id": "2bd682cc.75217e",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 640,
+        "wires": [
+            [
+                "8ad5d29e.85044"
+            ]
+        ]
+    },
+    {
+        "id": "774e39dc.91d808",
+        "type": "debug",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "8ad5d29e.85044",
+        "type": "exec",
+        "z": "69b6c0ce.2832d",
+        "command": " termux-camera-info",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 400,
+        "y": 660,
+        "wires": [
+            [
+                "774e39dc.91d808"
+            ],
+            [
+                "774e39dc.91d808"
+            ],
+            [
+                "774e39dc.91d808"
+            ]
+        ]
+    },
+    {
+        "id": "a01e6c75.34a26",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "cb77c34f.d1fb9"
+            ]
+        ]
+    },
+    {
+        "id": "cca720fc.53e0e",
+        "type": "debug",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "cb77c34f.d1fb9",
+        "type": "exec",
+        "z": "69b6c0ce.2832d",
+        "command": "termux-call-log",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 410,
+        "y": 780,
+        "wires": [
+            [
+                "cca720fc.53e0e"
+            ],
+            [
+                "cca720fc.53e0e"
+            ],
+            [
+                "cca720fc.53e0e"
+            ]
+        ]
+    },
+    {
+        "id": "cfe84607.8efa18",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 920,
+        "wires": [
+            [
+                "4abec896.8ce108"
+            ]
+        ]
+    },
+    {
+        "id": "cfbd4167.85d41",
+        "type": "debug",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "4abec896.8ce108",
+        "type": "exec",
+        "z": "69b6c0ce.2832d",
+        "command": "termux-camera-photo",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 450,
+        "y": 920,
+        "wires": [
+            [
+                "cfbd4167.85d41"
+            ],
+            [
+                "cfbd4167.85d41"
+            ],
+            [
+                "cfbd4167.85d41"
+            ]
+        ]
+    },
+    {
+        "id": "9d70864e.a8e868",
+        "type": "ui_button",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "group": "aa829c2a.27201",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Hola",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{msg.background}}",
+        "icon": "",
+        "payload": "Hola",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1080,
+        "wires": [
+            [
+                "4a7ea048.9839f"
+            ]
+        ]
+    },
+    {
+        "id": "3002528f.f8e13e",
+        "type": "ui_button",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "group": "aa829c2a.27201",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Adios",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "black",
+        "icon": "",
+        "payload": "Adios",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 1140,
+        "wires": [
+            [
+                "4a7ea048.9839f"
+            ]
+        ]
+    },
+    {
+        "id": "4a7ea048.9839f",
+        "type": "ui_text",
+        "z": "69b6c0ce.2832d",
+        "group": "aa829c2a.27201",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "salidadetexto",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 610,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "94e9062d.6c1978",
+        "type": "ui_colour_picker",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "label": "Selectordecolor",
+        "group": "aa829c2a.27201",
+        "format": "rgb",
+        "outformat": "string",
+        "showSwatch": true,
+        "showPicker": false,
+        "showValue": false,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "dynOutput": "false",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 1020,
+        "wires": [
+            [
+                "60eb6de5.c899d4"
+            ]
+        ]
+    },
+    {
+        "id": "60eb6de5.c899d4",
+        "type": "change",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background ",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 1080,
+        "wires": [
+            [
+                "9d70864e.a8e868"
+            ]
+        ]
+    },
+    {
+        "id": "d800da4d.cb8f68",
+        "type": "nora-switch",
+        "z": "992ee00.be55a2",
+        "devicename": "lucecita ",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "nora": "3ec09052.83396",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "37ea127e.4178ee",
+                "c75b0713.29a8d8"
+            ]
+        ]
+    },
+    {
+        "id": "37ea127e.4178ee",
+        "type": "debug",
+        "z": "992ee00.be55a2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c75b0713.29a8d8",
+        "type": "switch",
+        "z": "992ee00.be55a2",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "c5b5ae8c.bed61",
+                "55b67973.1bbae8"
+            ]
+        ]
+    },
+    {
+        "id": "c5b5ae8c.bed61",
+        "type": "exec",
+        "z": "992ee00.be55a2",
+        "command": "termux-torch on",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "55b67973.1bbae8",
+        "type": "exec",
+        "z": "992ee00.be55a2",
+        "command": "termux-torch off",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f5c9a1f6.2a177",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1200,
+        "wires": [
+            [
+                "d19d20ab.ca07d"
+            ]
+        ]
+    },
+    {
+        "id": "b34d94ce.758e58",
+        "type": "debug",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "d19d20ab.ca07d",
+        "type": "exec",
+        "z": "69b6c0ce.2832d",
+        "command": "termux-torch on",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 300,
+        "y": 1200,
+        "wires": [
+            [
+                "b34d94ce.758e58"
+            ],
+            [
+                "b34d94ce.758e58"
+            ],
+            [
+                "b34d94ce.758e58"
+            ]
+        ]
+    },
+    {
+        "id": "329c2b7d.026934",
+        "type": "inject",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1300,
+        "wires": [
+            [
+                "4a8effb6.36206"
+            ]
+        ]
+    },
+    {
+        "id": "cc0e307e.29e86",
+        "type": "debug",
+        "z": "69b6c0ce.2832d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "4a8effb6.36206",
+        "type": "exec",
+        "z": "69b6c0ce.2832d",
+        "command": "termux-torch off",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 320,
+        "y": 1300,
+        "wires": [
+            [
+                "cc0e307e.29e86"
+            ],
+            [
+                "cc0e307e.29e86"
+            ],
+            [
+                "cc0e307e.29e86"
+            ]
+        ]
+    },
+    {
+        "id": "80a114d6.9c65d8",
+        "type": "telegrambot-command",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "bot": "f4449555.191ff8",
+        "command": ".*",
+        "commandType": "re",
+        "commandCase": false,
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "15dedf9b.708bf",
+                "c2ddf051.6c70c",
+                "fa25ac42.12091",
+                "d960c84c.31c898"
+            ]
+        ]
+    },
+    {
+        "id": "15dedf9b.708bf",
+        "type": "debug",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c2ddf051.6c70c",
+        "type": "debug",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "telegram.from.first_name",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fa25ac42.12091",
+        "type": "function",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "func": "msg.payload = \"Hello \" + msg.telegram.from.first_name;\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "678fe0ce.34652",
+                "2f5a3896.2d7558"
+            ]
+        ]
+    },
+    {
+        "id": "251ac72b.6e6c58",
+        "type": "debug",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "678fe0ce.34652",
+        "type": "telegrambot-notify",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "bot": "f4449555.191ff8",
+        "chatId": "",
+        "message": "",
+        "parseMode": "",
+        "x": 660,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c9ffdc72.d0cce",
+        "type": "telegrambot-payload",
+        "z": "112a486b.6884e8",
+        "name": "Animals",
+        "bot": "f4449555.191ff8",
+        "chatId": "",
+        "sendMethod": "sendPhoto",
+        "payload": "{\n    \"photo\": \"http://placeimg.com/640/480/animals\",\n    \"caption\": \"Animals\"\n}",
+        "x": 900,
+        "y": 240,
+        "wires": [
+            [
+                "251ac72b.6e6c58"
+            ]
+        ]
+    },
+    {
+        "id": "2f5a3896.2d7558",
+        "type": "telegrambot-switch",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "bot": "f4449555.191ff8",
+        "chatId": "",
+        "question": "What a piture you want?",
+        "answers": [
+            "Animals ",
+            "Nature",
+            "Grayscale"
+        ],
+        "outputs": 3,
+        "autoAnswerCallback": true,
+        "timeoutValue": "",
+        "timeoutUnits": "",
+        "x": 720,
+        "y": 300,
+        "wires": [
+            [
+                "c9ffdc72.d0cce"
+            ],
+            [
+                "ee657361.20ac7"
+            ],
+            [
+                "992860ec.a40d7"
+            ]
+        ]
+    },
+    {
+        "id": "ee657361.20ac7",
+        "type": "telegrambot-payload",
+        "z": "112a486b.6884e8",
+        "name": "Nature",
+        "bot": "f4449555.191ff8",
+        "chatId": "",
+        "sendMethod": "sendPhoto",
+        "payload": "{\n    \"photo\": \"http://placeimg.com/640/480/nature\",\n    \"caption\": \"Nature\"\n}",
+        "x": 890,
+        "y": 300,
+        "wires": [
+            [
+                "251ac72b.6e6c58"
+            ]
+        ]
+    },
+    {
+        "id": "992860ec.a40d7",
+        "type": "telegrambot-payload",
+        "z": "112a486b.6884e8",
+        "name": "Grayscale",
+        "bot": "f4449555.191ff8",
+        "chatId": "",
+        "sendMethod": "sendPhoto",
+        "payload": "{\n    \"photo\": \"http://placeimg.com/640/480/nature/grayscale\",\n    \"caption\": \"Grayscale\"\n}",
+        "x": 900,
+        "y": 360,
+        "wires": [
+            [
+                "251ac72b.6e6c58"
+            ]
+        ]
+    },
+    {
+        "id": "b8a73428.af81a8",
+        "type": "debug",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d960c84c.31c898",
+        "type": "google-translate",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "to": "en",
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "678fe0ce.34652",
+                "b8a73428.af81a8",
+                "2cfe2532.0dc24a"
+            ]
+        ]
+    },
+    {
+        "id": "2cfe2532.0dc24a",
+        "type": "ui_audio",
+        "z": "112a486b.6884e8",
+        "name": "",
+        "group": "aa829c2a.27201",
+        "voice": "Microsoft Zira Desktop - English (United States)",
+        "always": "",
+        "x": 560,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "91a47bbc.faca68",
+        "type": "inject",
+        "z": "4d6bff31.31a37",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hola, como esta?",
+        "payloadType": "str",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "9bd9d12b.454da"
+            ]
+        ]
+    },
+    {
+        "id": "9bd9d12b.454da",
+        "type": "twilio out",
+        "z": "4d6bff31.31a37",
+        "twilio": "778788fb.669f08",
+        "twilioType": "sms",
+        "url": "",
+        "number": "+525591090233",
+        "name": "",
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "18a312d9.aedf2d",
+        "type": "mqtt in",
+        "z": "d98bfc21.d7af6",
+        "name": "",
+        "topic": "/interamericana/apps/carlos",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "8788f922.c06e78",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "f85d4e01.da0aa"
+            ]
+        ]
+    },
+    {
+        "id": "e0171346.ee486",
+        "type": "mqtt out",
+        "z": "d98bfc21.d7af6",
+        "name": "",
+        "topic": "/interamericana/apps/carlos",
+        "qos": "",
+        "retain": "",
+        "broker": "8788f922.c06e78",
+        "x": 380,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f85d4e01.da0aa",
+        "type": "debug",
+        "z": "d98bfc21.d7af6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f35673d6.44eea",
+        "type": "inject",
+        "z": "d98bfc21.d7af6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "e0171346.ee486"
+            ]
+        ]
+    },
+    {
+        "id": "c170bab2.6809c8",
+        "type": "inject",
+        "z": "d98bfc21.d7af6",
+        "name": "hola",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "662bd72a.f39158"
+            ]
+        ]
+    },
+    {
+        "id": "5a5d622a.6909dc",
+        "type": "inject",
+        "z": "d98bfc21.d7af6",
+        "name": "como esta ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "662bd72a.f39158"
+            ]
+        ]
+    },
+    {
+        "id": "662bd72a.f39158",
+        "type": "mqtt out",
+        "z": "d98bfc21.d7af6",
+        "name": "",
+        "topic": "david",
+        "qos": "",
+        "retain": "",
+        "broker": "8788f922.c06e78",
+        "x": 280,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "295f1666.8c614a",
+        "type": "mqtt in",
+        "z": "d98bfc21.d7af6",
+        "name": "",
+        "topic": "david",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "8788f922.c06e78",
+        "x": 90,
+        "y": 400,
+        "wires": [
+            [
+                "a096e9ce.77c538"
+            ]
+        ]
+    },
+    {
+        "id": "a096e9ce.77c538",
+        "type": "debug",
+        "z": "d98bfc21.d7af6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 230,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "36cdb22b.d48e4e",
+        "type": "mqtt in",
+        "z": "8966470b.7d9a68",
+        "name": "",
+        "topic": "interamericana",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "8788f922.c06e78",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "ff251f6d.926ea",
+                "813698df.7dd938"
+            ]
+        ]
+    },
+    {
+        "id": "f8eb2ff.31616d",
+        "type": "mqtt out",
+        "z": "8966470b.7d9a68",
+        "name": "",
+        "topic": "interamericana",
+        "qos": "",
+        "retain": "",
+        "broker": "8788f922.c06e78",
+        "x": 350,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ff251f6d.926ea",
+        "type": "debug",
+        "z": "8966470b.7d9a68",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f1bd8ebf.61ba7",
+        "type": "inject",
+        "z": "8966470b.7d9a68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hola,¿cómo está?",
+        "payloadType": "str",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "f8eb2ff.31616d"
+            ]
+        ]
+    },
+    {
+        "id": "96bc3a5a.ff07e8",
+        "type": "ui_text_input",
+        "z": "8966470b.7d9a68",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "aa829c2a.27201",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "f8eb2ff.31616d"
+            ]
+        ]
+    },
+    {
+        "id": "813698df.7dd938",
+        "type": "ui_text",
+        "z": "8966470b.7d9a68",
+        "group": "aa829c2a.27201",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Salida",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 340,
+        "y": 40,
+        "wires": []
+    }
+]
